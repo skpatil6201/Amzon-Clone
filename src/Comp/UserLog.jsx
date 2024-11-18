@@ -24,7 +24,7 @@ const UserLog = () => {
       : signInWithEmailAndPassword(auth, email, password);
 
     authFn.then(() => alert(signUp ? "Account Created Successfully!" : "Login Successfully!"))
-      .catch((err) => alert(err.message));
+      .catch((err) => alert("Invalid Email or Password"));
   };
 
   return (
